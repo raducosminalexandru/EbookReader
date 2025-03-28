@@ -29,11 +29,75 @@ Prin intermediul acestui dispozitiv, punem bazele unui produs care va oferi citi
 | **W25Q512JVEIQ** | [Mouser](https://ro.mouser.com/ProductDetail/ROHM-Semiconductor/BD5229G-TR?qs=4kLU8WoGk0vvnhrrYwdszw%3D%3D](https://ro.mouser.com/ProductDetail/Winbond/W25Q512JVEIQ?qs=l7cgNqFNU1jw6svr3at6tA%3D%3D))  
 | **Qwiic Right Angle** | [Mouser](https://ro.mouser.com/ProductDetail/Adafruit/4208?qs=PzGy0jfpSMtbScLbr0L5dw%3D%3D) |
 
-Aceasta imagine prezinta diagrama bloc de interconectare a componentelor, inclusiv tensiunile de alimentare si protocoalele de comunicatie utilizate intre ele. 🔌📡
+Urmatoarea imagine prezinta diagrama bloc de interconectare a componentelor, inclusiv tensiunile de alimentare si protocoalele de comunicatie utilizate intre ele. 🔌📡
 
 <div align="center">
 
-![Desen fără titlu](https://github.com/user-attachments/assets/e3f7c769-7b54-4c3c-b595-9596acb90362)
+![Diagrama](https://github.com/user-attachments/assets/e3f7c769-7b54-4c3c-b595-9596acb90362)
 
 </div>
+
+Modelul 3D al PCB-ului poate fi observat si in imaginea urmatoare, ceea ce permite o analiza detaliata a componentei si a configuratiei acestuia. Acest model ofera o perspectiva clara asupra dimensiunilor, plasarii componentelor si a traseelor de pe placa, ajutand la identificarea posibilelor interferente sau probleme de proiectare.
+
+<div align="center">
+  
+![PCB 3D](https://github.com/user-attachments/assets/f15030c4-c85b-4895-b0de-86d668267e7a)
+
+</div>
+
+Putem vizualiza si traseele mai bine in modelul 3D, ceea ce faciliteaza o analiza mai detaliata a conexiunilor dintre componente. Acest lucru permite identificarea eventualelor probleme legate de lungimea sau latimea traseelor, precum si a eventualelor puncte de coliziune sau interferenta.
+
+<div align="center">
+  
+![PCB 3D](https://github.com/user-attachments/assets/4f9318ce-51de-4afb-9dc2-9f8f3b9724e5)
+
+</div>
+
+Evident, voi pune si amplasarea PCB-ului in carcasa, precum si modelul 3D al display-ului si al bateriei, pentru a avea o imagine completa a integrarii tuturor componentelor in ansamblul final. Aceasta abordare ajuta la verificarea compatibilitatii dimensiunilor, asigurand ca fiecare componenta se potriveste corect in spatiul disponibil. Vizualizarea in 3D a PCB-ului, display-ului si bateriei in carcasa permite identificarea eventualelor conflicte de spatiu si ajustarea designului in mod eficient, astfel incat toate componentele sa functioneze optim si sa se incadreze corect in structura finala a produsului.
+
+<div align="center">
+  
+![3D EBOOK](https://github.com/user-attachments/assets/a87b099d-33b6-47a0-bc5a-1f4d037f611f)
+
+
+</div>
+
+<div align="center">
+  
+![3D EBOOK](https://github.com/user-attachments/assets/f28ea4a5-3759-436e-9728-460098db4949)
+
+
+</div>
+
+<div align="center">
+  
+![3D EBOOK](https://github.com/user-attachments/assets/4e62ba93-b3d2-4ded-ab40-c03025bd8bdd)
+
+
+</div>
+
+<div align="center">
+  
+![3D EBOOK](https://github.com/user-attachments/assets/14f51f09-6cef-438a-b1a6-9433d0ae2223)
+
+
+</div>
+
+
+### Cerinte de 'Good Practice' respectate de dispozitiv:
+
+✅ Traseele de alimentare (VCC, VUSB, VBUS, 3V3 etc.) sunt rutate folosind width = 0.3mm, semnalele de date cu minimum width de 0.15mm.  
+✅ Antena modulului ESP32 este amplasata spre exteriorul PCB-ului si PCB-ul trebuie sa fie decupat sub antena.  
+✅ Verificare ERC si DRC.  
+✅ Condensatoarele de decuplare (100nF) sunt amplasate cat mai aproape de pinii de alimentare ai diferitelor module si circuite integrate.  
+✅ Suprafata PCB-ului de sub antena modulului ESP32 a fost decupata pentru a crea cat mai putine interferente cu semnalul radio.  
+✅ Planuri de masa situate pe ambele nivele (TOP, BOTTOM).  
+✅ Antena modulului ESP32 este amplasata spre exteriorul PCB-ului si PCB-ul este decupat sub antena.  
+✅ S-a aplicat 'Via Stitching' intre cele doua planuri de masa, in special in preajma modulului ESP32, precum si in jurul componentelor principale.
+
+### Erori acceptate pe dispozitiv:
+
+✅ A fost acceptata eroarea de 'Overlap' deoarece tine de modul in care a fost facuta componenta in 'Fusion 360'.  
+✅ A fost acceptata eroarea de neconectare la planul de masa conform urmatoarelor discutii, unde nu s-a gasit o solutie concreta. Link: [https://forums.autodesk.com/t5/fusion-electronics/finishing-the-autorouter-disconnects-patches-of-polygon-signal/td-p/11912650](https://forums.autodesk.com/t5/fusion-electronics/finishing-the-autorouter-disconnects-patches-of-polygon-signal/td-p/11912650)  
+✅ Au fost realizate in jur de 100 de vias-uri, unele si pe sub componente, deoarece nu a fost gasit un mod mai facil de a face cat mai putine vias-uri.
 
