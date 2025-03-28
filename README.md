@@ -101,3 +101,50 @@ Evident, voi pune si amplasarea PCB-ului in carcasa, precum si modelul 3D al dis
 ✅ A fost acceptata eroarea de neconectare la planul de masa conform urmatoarelor discutii, unde nu s-a gasit o solutie concreta. Link: [https://forums.autodesk.com/t5/fusion-electronics/finishing-the-autorouter-disconnects-patches-of-polygon-signal/td-p/11912650](https://forums.autodesk.com/t5/fusion-electronics/finishing-the-autorouter-disconnects-patches-of-polygon-signal/td-p/11912650)  
 ✅ Au fost realizate in jur de 100 de vias-uri, unele si pe sub componente, deoarece nu a fost gasit un mod mai facil de a face cat mai putine vias-uri.
 
+# Pinii ESP32 C6 folositi
+
+Se poate vizualiza modul de conectare al componentelor in raport cu ESP32 C6. Se poate observa clar cum acesta poate fi atat 'Master', cat si 'Slave', lucru ce permite comunicatia SPI.
+
+## 1. SD Card
+- **CLK** → GPIO6  
+- **CMD** → GPIO7  
+- **DATA0** → GPIO8  
+- **DATA1** → GPIO9  
+- **DATA2** → GPIO10  
+- **DATA3** → GPIO11  
+
+## 2. Ecran E-Paper
+Comunicare prin SPI și GPIO-uri adiționale:
+- **MOSI** → GPIO4  
+- **SCK** → GPIO5  
+- **DC** → GPIO18  
+- **CS** → GPIO17  
+- **BUSY** → GPIO16  
+- **RESET** → GPIO15  
+
+## 3. Memorie NOR Flash 64MB (W25Q512JV)
+Comunicare prin SPI:
+- **MOSI** → GPIO4  
+- **MISO** → GPIO3  
+- **CLK** → GPIO5  
+- **CS** → GPIO2  
+
+## 4. Senzor de mediu BME688 (I²C)
+- **SCL** → GPIO20  
+- **SDA** → GPIO19  
+
+## 5. RTC DS3231SN (I²C)
+- **SCL** → GPIO20  
+- **SDA** → GPIO19  
+
+## 6. Qwiic / Stemma QT (I²C)
+- **SCL** → GPIO20  
+- **SDA** → GPIO19  
+
+## 7. Indicator nivel baterie (MAX17048G+T10) (I²C)
+- **SCL** → GPIO20  
+- **SDA** → GPIO19  
+
+## 8. Buton de Reset și Boot
+- **Reset** → GPIO0  
+- **Boot** → GPIO1  
