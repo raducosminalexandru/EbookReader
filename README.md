@@ -12,7 +12,7 @@ Prin utilizarea unor componente hardware eficiente si un software open-source, *
 
 Prin intermediul acestui dispozitiv, punem bazele unui produs care va oferi cititorilor libertatea de a se bucura de carti digitale intr-un mod accesibil si fara compromisuri in ceea ce priveste performanta si functionalitatea.
 
-## Bill of Materials (BOM)
+## Bill of Materials (BOM) - varianta succinta a fisierului BOM
 
 | Componenta               | Link si Datasheet                                                                                           |
 |--------------------------|-------------------------------------------------------------------------------------------------------------|
