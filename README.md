@@ -41,7 +41,7 @@ Modelul 3D al PCB-ului poate fi observat si in imaginea urmatoare, ceea ce permi
 
 <div align="center">
   
-![PCB 3D](https://github.com/user-attachments/assets/f15030c4-c85b-4895-b0de-86d668267e7a)
+![1](https://github.com/user-attachments/assets/b76640c3-ca7d-4322-b305-c3ef1e1ebf30)
 
 </div>
 
@@ -49,7 +49,7 @@ Putem vizualiza si traseele mai bine in modelul 3D, ceea ce faciliteaza o analiz
 
 <div align="center">
   
-![PCB 3D](https://github.com/user-attachments/assets/4f9318ce-51de-4afb-9dc2-9f8f3b9724e5)
+![2](https://github.com/user-attachments/assets/a7708b39-650d-4b7a-ba79-70a36b546a23)
 
 </div>
 
@@ -57,21 +57,21 @@ Evident, voi pune si amplasarea PCB-ului in carcasa, precum si modelul 3D al dis
 
 <div align="center">
   
-![3D EBOOK](https://github.com/user-attachments/assets/a87b099d-33b6-47a0-bc5a-1f4d037f611f)
+![3D 1](https://github.com/user-attachments/assets/6aab1e64-67be-4fd6-97d8-c066eb84f106)
 
 
 </div>
 
 <div align="center">
   
-![3D EBOOK](https://github.com/user-attachments/assets/f28ea4a5-3759-436e-9728-460098db4949)
+![3](https://github.com/user-attachments/assets/8e9ba450-5b0b-44fe-aefe-43617e1befa1)
 
 
 </div>
 
 <div align="center">
   
-![3D EBOOK](https://github.com/user-attachments/assets/4e62ba93-b3d2-4ded-ab40-c03025bd8bdd)
+![4](https://github.com/user-attachments/assets/acd43543-4f9e-4bf6-883f-73b78202d5f7)
 
 
 </div>
