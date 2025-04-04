@@ -99,7 +99,7 @@ Evident, voi pune si amplasarea PCB-ului in carcasa, precum si modelul 3D al dis
 
 ✅ A fost acceptata eroarea de 'Overlap' deoarece tine de modul in care a fost facuta componenta in 'Fusion 360'.  
 ✅ A fost acceptata eroarea de neconectare la planul de masa conform urmatoarelor discutii, unde nu s-a gasit o solutie concreta. Link: [https://forums.autodesk.com/t5/fusion-electronics/finishing-the-autorouter-disconnects-patches-of-polygon-signal/td-p/11912650](https://forums.autodesk.com/t5/fusion-electronics/finishing-the-autorouter-disconnects-patches-of-polygon-signal/td-p/11912650)  
-✅ Au fost realizate in jur de 100 de vias-uri, unele si pe sub componente, deoarece nu a fost gasit un mod mai facil de a face cat mai putine vias-uri.
+✅ Au fost realizate in jur de 88 de vias-uri, unele si pe sub componente, deoarece nu a fost gasit un mod mai facil de a face cat mai putine.
 
 # Pinii ESP32 C6 folositi
 
