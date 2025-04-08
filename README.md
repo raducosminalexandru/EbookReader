@@ -33,7 +33,9 @@ Urmatoarea imagine prezinta diagrama bloc de interconectare a componentelor, inc
 
 <div align="center">
 
-![Diagrama](https://github.com/user-attachments/assets/e3f7c769-7b54-4c3c-b595-9596acb90362)
+![Diagrama](https://github.com/user-attachments/assets/d4f46cba-7525-401c-adea-f654d0fa5048)
+
+
 
 </div>
 
