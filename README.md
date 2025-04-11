@@ -131,19 +131,19 @@ Comunicare prin SPI:
 - **CLK** → GPIO5  
 - **CS** → GPIO2  
 
-## 4. Senzor de mediu BME688 (I²C)
+## 4. Senzor de mediu BME688 (I2C)
 - **SCL** → GPIO20  
 - **SDA** → GPIO19  
 
-## 5. RTC DS3231SN (I²C)
+## 5. RTC DS3231SN (I2C)
 - **SCL** → GPIO20  
 - **SDA** → GPIO19  
 
-## 6. Qwiic / Stemma QT (I²C)
+## 6. Qwiic / Stemma QT (I2C)
 - **SCL** → GPIO20  
 - **SDA** → GPIO19  
 
-## 7. Indicator nivel baterie (MAX17048G+T10) (I²C)
+## 7. Indicator nivel baterie (MAX17048G+T10) (I2C)
 - **SCL** → GPIO20  
 - **SDA** → GPIO19  
 
