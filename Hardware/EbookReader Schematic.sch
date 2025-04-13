@@ -3170,11 +3170,11 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <attribute name="TP_SIGNAL_NAME" x="-26.67" y="-80.01" size="1.778" layer="97" rot="R180"/>
 </instance>
 <instance part="TP4" gate="G$1" x="-20.32" y="-81.28" smashed="yes" rot="R180">
-<attribute name="NAME" x="-19.05" y="-82.55" size="1.778" layer="95" rot="R180"/>
+<attribute name="NAME" x="-18.796" y="-82.296" size="1.778" layer="95" rot="R180"/>
 <attribute name="TP_SIGNAL_NAME" x="-21.59" y="-80.01" size="1.778" layer="97" rot="R180"/>
 </instance>
 <instance part="GND" gate="G$1" x="-15.24" y="-81.28" smashed="yes" rot="R180">
-<attribute name="NAME" x="-13.97" y="-82.55" size="1.778" layer="95" rot="R180"/>
+<attribute name="NAME" x="-12.7" y="-82.042" size="1.778" layer="95" rot="R180"/>
 <attribute name="TP_SIGNAL_NAME" x="-16.51" y="-80.01" size="1.778" layer="97" rot="R180"/>
 </instance>
 <instance part="MISO" gate="G$1" x="-35.56" y="-99.06" smashed="yes" rot="R180">
@@ -3218,11 +3218,11 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <attribute name="TP_SIGNAL_NAME" x="-6.35" y="-115.57" size="1.778" layer="97" rot="R180"/>
 </instance>
 <instance part="3V3" gate="G$1" x="-10.16" y="-81.28" smashed="yes" rot="R180">
-<attribute name="NAME" x="-8.89" y="-82.55" size="1.778" layer="95" rot="R180"/>
+<attribute name="NAME" x="-8.128" y="-82.55" size="1.778" layer="95" rot="R180"/>
 <attribute name="TP_SIGNAL_NAME" x="-11.43" y="-80.01" size="1.778" layer="97" rot="R180"/>
 </instance>
 <instance part="EPD_3V3" gate="G$1" x="-2.54" y="-81.28" smashed="yes" rot="R180">
-<attribute name="NAME" x="-1.27" y="-82.55" size="1.778" layer="95" rot="R180"/>
+<attribute name="NAME" x="-0.254" y="-82.55" size="1.27" layer="95" rot="R180"/>
 <attribute name="TP_SIGNAL_NAME" x="-3.81" y="-80.01" size="1.778" layer="97" rot="R180"/>
 </instance>
 <instance part="J3" gate="J1" x="22.86" y="-86.36" smashed="yes" rot="R180">
@@ -4193,11 +4193,6 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <label x="185.42" y="-78.74" size="0.6096" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<wire x1="0" y1="-58.42" x2="195.58" y2="-58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="RESET" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="EN"/>
@@ -4830,11 +4825,6 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <pinref part="D7" gate="G$0" pin="CATHODE"/>
 <wire x1="-106.68" y1="-73.66" x2="-93.98" y2="-73.66" width="0.1524" layer="91"/>
 <pinref part="R_CAPACITOR" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<wire x1="-185.42" y1="15.24" x2="43.18" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
