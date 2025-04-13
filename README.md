@@ -43,7 +43,8 @@ Modelul 3D al PCB-ului poate fi observat si in imaginea urmatoare, ceea ce permi
 
 <div align="center">
   
-![1](https://github.com/user-attachments/assets/b76640c3-ca7d-4322-b305-c3ef1e1ebf30)
+![1](https://github.com/user-attachments/assets/4fe50a38-774b-41ee-b400-88582fca79c5)
+
 
 </div>
 
@@ -55,11 +56,17 @@ Putem vizualiza si traseele mai bine in modelul 3D, ceea ce faciliteaza o analiz
 
 </div>
 
-Evident, voi pune si amplasarea PCB-ului in carcasa, precum si modelul 3D al display-ului si al bateriei, pentru a avea o imagine completa a integrarii tuturor componentelor in ansamblul final. Aceasta abordare ajuta la verificarea compatibilitatii dimensiunilor, asigurand ca fiecare componenta se potriveste corect in spatiul disponibil. Vizualizarea in 3D a PCB-ului, display-ului si bateriei in carcasa permite identificarea eventualelor conflicte de spatiu si ajustarea designului in mod eficient, astfel incat toate componentele sa functioneze optim si sa se incadreze corect in structura finala a produsului.
+📐 **Integrarea modelului 3D al display-ului si al bateriei**
 
-<div align="center">
-  
-![3D 1](https://github.com/user-attachments/assets/6aab1e64-67be-4fd6-97d8-c066eb84f106)
+Pentru o reprezentare cat mai completa a ansamblului final, au fost incluse in proiect si modelele 3D ale display-ului si ale bateriei. Aceasta decizie a avut un rol esential in etapa de validare a designului, permitand o evaluare vizuala si functionala a intregului sistem, direct in mediul 3D.
+
+Prin integrarea acestor componente, a fost posibila:
+- ✅ **Verificarea compatibilitatii dimensionale** – Asigurarea ca fiecare componenta are un spatiu adecvat in interiorul carcasei, fara suprapuneri sau conflicte mecanice.
+- 🧩 **Optimizarea pozitionarii componentelor** – Plasarea strategica a display-ului si bateriei pentru a facilita accesul, vizibilitatea, distributia greutatii si eficienta termica.
+- 🧠 **Identificarea timpurie a potentialelor probleme de spatiu** – Vizualizarea in 3D permite observarea oricaror interferente sau nepotriviri intre PCB, baterie, display si carcasa proiectului.
+- 🔧 **Eficientizarea procesului de prototipare** – Un model 3D complet si realist reduce riscul de erori in faza de fabricatie, scurtand ciclurile de testare si ajustare.
+
+Aceasta abordare contribuie direct la cresterea fiabilitatii produsului final, asigurand ca toate componentele nu doar functioneaza impreuna, ci si se potrivesc perfect in structura fizica a dispozitivului.
 
 
 </div>
@@ -96,12 +103,30 @@ Evident, voi pune si amplasarea PCB-ului in carcasa, precum si modelul 3D al dis
 ✅ Planuri de masa situate pe ambele nivele (TOP, BOTTOM).  
 ✅ Antena modulului ESP32 este amplasata spre exteriorul PCB-ului si PCB-ul este decupat sub antena.  
 ✅ S-a aplicat 'Via Stitching' intre cele doua planuri de masa, in special in preajma modulului ESP32, precum si in jurul componentelor principale.
+✅ Placa are grosimea de 1mm, lucru ce permite introducerea in carcasa si pozitionarea corecta a mufelor.
+✅ Vias-uri legate de masa au fost aplicate in toate zonele in care nu se facea 'Pour'.
+✅ Valorile rezistentelor si condensatoarelor au fost sterse din 'Board' de pe layer-ul 'Silkscreen' pentru a permite o lizibilitate mai buna.
+✅ Footprint-urile anumitor componente au fost schimbate prin modificarea marimilor unor pini, permitand traseele de putere sa se lege la ele, acestea fiind mai groase.
+✅ Nu exista unghiuri drepte in cadrul rutarii pe placa.
 
 ### Erori acceptate pe dispozitiv:
+✅Erorile 'Board Outline Clearance', conform cerintelor impuse.
 
-✅ A fost acceptata eroarea de 'Overlap' deoarece tine de modul in care a fost facuta componenta in 'Fusion 360'.  
-✅ A fost acceptata eroarea de neconectare la planul de masa conform urmatoarelor discutii, unde nu s-a gasit o solutie concreta. Link: [https://forums.autodesk.com/t5/fusion-electronics/finishing-the-autorouter-disconnects-patches-of-polygon-signal/td-p/11912650](https://forums.autodesk.com/t5/fusion-electronics/finishing-the-autorouter-disconnects-patches-of-polygon-signal/td-p/11912650)  
-✅ Au fost realizate in jur de 88 de vias-uri, unele si pe sub componente, deoarece nu a fost gasit un mod mai facil de a face cat mai putine.
+### 🌐 Surse auxiliare utilizate pentru modele 3D
+
+## Surse externe pentru modelarea 3D a ansamblului
+
+Pentru a completa designul 3D al placii si a asigura o reprezentare cat mai fidela a ansamblului, au fost utilizate urmatoarele surse externe:
+
+🔍 **Component Search Engine**  
+Aceasta platforma a fost principalul instrument folosit pentru importarea modelelor 3D ale componentelor electronice standard. A oferit o integrare rapida si precisa cu software-ul de proiectare, facilitand plasarea corecta a componentelor in layout-ul 3D.
+
+🟢 **Farnell**  
+Modelele 3D ale butoanelor nu erau disponibile in Component Search Engine, asa ca s-a apelat la biblioteca pusa la dispozitie de Farnell. Aceasta ofera fisiere 3D compatibile si bine detaliate, utile pentru verificarea dimensiunilor fizice si a spatiului ocupat pe placa.
+
+📦 **GrabCAD**  
+Modelul 3D al Solder Jumper-ului (SJ) a fost descarcat de pe GrabCAD, o platforma colaborativa care pune la dispozitie o varietate larga de modele CAD. A fost ales un model potrivit, care a fost ulterior ajustat pentru a corespunde dimensiunilor reale folosite in proiect.
+
 
 # Pinii ESP32 C6 folositi
 
